@@ -71,7 +71,7 @@ function Slider({ id }: SliderProps) {
         ref={ref}
       >
         <div className="bg-red-600 p-10 w-full rounded-xl font-archivo text-white text-center">
-          <AnimText />
+          <AnimText delay={0} />
         </div>
         <div className="flex mt-5 justify-center">
           <a
