@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useRef, useState, ReactNode } from "react";
 import {
   motion,
@@ -106,108 +106,82 @@ function Slider({ id }: SliderProps) {
       </UseInView>
       {skillsIndex === 0 && (
         <div>
-  
           <UseInView>
             <div className="flex flex-col">
+              <motion.h3
+                initial={{ opacity: 0, scale: 0.5, x: -500 }}
+                animate={{ opacity: 1, scale: 1, x: 0 }}
+                transition={{ duration: 0.7 }}
+                className="text-dark mb-4 lg:text-xl"
+                style={{ zIndex: 1 }}
+              >
+                Proven experience working with:
+              </motion.h3>
 
-              
-          <motion.h3
-         initial={{ opacity: 0, scale: 0.5, x:-500 }}
-         animate={{ opacity: 1, scale: 1,x:0 }}
-            transition={{ duration: 0.7 }}
-            className="text-dark mb-4 lg:text-xl"
-            style={{ zIndex: 1 }}
-          >
-            Proven experience working with:
-          </motion.h3>
-
-            <div
-              className="bg-gray-200 relative flex flex-col flex-wrap justify-center p-5 lg:p-5 items-center rounded-2xl"
-            >
-              <div className="flex">
-                <div className="h-14 w-14 lg:h-20 lg:w-20">
-                  <ReactIcon />
+              <div className="bg-gray-200 relative flex flex-col flex-wrap justify-center p-5 lg:p-5 items-center rounded-2xl">
+                <div className="flex">
+                  <div className="h-14 w-14 lg:h-20 lg:w-20">
+                    <ReactIcon />
+                  </div>
+                  <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
+                    <NodeJS />
+                  </div>
+                  <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
+                    <Bootstrap />
+                  </div>
+                  <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
+                    <NextJS />
+                  </div>
+                  <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
+                    <AWS />
+                  </div>
+                  <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
+                    <Express />
+                  </div>
                 </div>
-                <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
-                  <NodeJS />
-                </div>
-                <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
-
-
-                  <Bootstrap />
-                </div>
-                <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
-
-
-                  <NextJS />
-                </div>
-                <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
-
-
-                  <AWS />
-                </div>
-                <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
-
-
-                  <Express />
-                </div>
-              </div>
-              <div className="flex mt-3">
-              <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
-
-
-                  <MongoDB />
-                </div>
-                <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
-
-
-                  <TypeScriptIcon />
-                </div>
-                <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
-
-
-                  <Redux />
-                </div>
-                <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
-
-
-                  <CSS />
-                </div>
-                <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
-
-
-                  <JS />
-                </div>
-                <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
-
-
-                  <HTML />
+                <div className="flex mt-3">
+                  <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
+                    <MongoDB />
+                  </div>
+                  <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
+                    <TypeScriptIcon />
+                  </div>
+                  <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
+                    <Redux />
+                  </div>
+                  <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
+                    <CSS />
+                  </div>
+                  <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
+                    <JS />
+                  </div>
+                  <div className="ml-1 h-14 w-14 lg:h-20 lg:w-20">
+                    <HTML />
+                  </div>
                 </div>
               </div>
+              <div className="w-full flex justify-center">
+                <SwitchButton
+                  className="bg-gray-200 p-2.5 rounded-2xl mt-8"
+                  setSkillsIndex={() => setSkillsIndex(1)}
+                />
+              </div>
             </div>
-            <div className="w-full flex justify-center">
-  
-            <SwitchButton className="bg-gray-200 p-2.5 rounded-2xl mt-8" setSkillsIndex={()=>setSkillsIndex(1)}/>
-
-            </div>
-            </div>
-
           </UseInView>
         </div>
       )}
       {skillsIndex === 1 && (
         <div className="">
           <div className="">
-            
-          <motion.h3
-            initial={{ opacity: 0, scale: 0.5, x:-500 }}
-            animate={{ opacity: 1, scale: 1,x:0 }}
-            transition={{ duration: 0.7 }}
-            className="mb-4 lg:text-xl"
-            style={{ zIndex: 1 }}
-          >
-            Proven experience working with:
-          </motion.h3>
+            <motion.h3
+              initial={{ opacity: 0, scale: 0.5, x: -500 }}
+              animate={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{ duration: 0.7 }}
+              className="mb-4 lg:text-xl"
+              style={{ zIndex: 1 }}
+            >
+              Proven experience working with:
+            </motion.h3>
           </div>
 
           <UseInView>
@@ -238,13 +212,13 @@ function Slider({ id }: SliderProps) {
                   <li>Mongoose</li>
                 </ul>
               </div>
-             
             </div>
             <div className="w-full flex justify-center">
-              
-            <SwitchButton className=" p-2.5 bg-gray-200 rounded-2xl mt-8" setSkillsIndex={()=>setSkillsIndex(0)}/>
+              <SwitchButton
+                className=" p-2.5 bg-gray-200 rounded-2xl mt-8"
+                setSkillsIndex={() => setSkillsIndex(0)}
+              />
             </div>
-
           </UseInView>
         </div>
       )}
@@ -253,44 +227,50 @@ function Slider({ id }: SliderProps) {
     <section id="portfolio" className="flex flex-col px-5 lg:p-0">
       <h3 className="text-3xl font-semibold mb-10">Portfolio</h3>
       <div className="lg:w-1/2 flex flex-col lg:flex-row justify-between">
-        <div>
+        <div className="">
           <img
-            className="w-10/12"
+            className="w-10/12 mx-auto lg:m-0"
             src={"./chatyou.io.png"}
             alt="ChatYou"
           ></img>
         </div>
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3 bg-gray-900 w-10/12 mx-auto mt-5 p-5 lg:m-0 rounded-xl lg:px-10">
           <h4 className="my-3">
-            <a className="no-underline text-gray-700 font-semibold" href="https://chatyou.io">
+            <a className="no-underline font-bold" href="https://chatyou.io">
               HTTPS://CHATYOU.IO
             </a>
           </h4>
-          A Full Stack chatting application made with React, TypeScript, Bootstrap, React Router, Redux Toolkit, Express, Socket.io, Mongoose, MongoDB and hosted using an ubuntu EC2 instance on AWS
+          A Full Stack chatting application made with React, TypeScript,
+          Bootstrap, React Router, Redux Toolkit, Express, Socket.io, Mongoose,
+          MongoDB and hosted using an ubuntu EC2 instance on AWS
         </div>
       </div>
     </section>
-  )  : id === 4 ? (
+  ) : id === 4 ? (
     <section id="portfolio" className="flex flex-col px-5 lg:p-0">
       <div className="lg:w-1/2 flex flex-col lg:flex-row justify-between">
         <div>
           <img
-            className="w-10/12"
-            src={"./chatyou.io.png"}
+            className="w-10/12 mx-auto lg:m-0"
+            src={"./newchore.com.png"}
             alt="ChatYou"
           ></img>
         </div>
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3 bg-gray-900 w-10/12 mx-auto mt-5 p-5 lg:m-0 rounded-xl lg:px-10">
           <h4 className="my-3">
-            <a className="no-underline text-gray-700 font-semibold" href="https://chatyou.io">
+            <a className="no-underline font-bold" href="https://newchore.com">
               HTTPS://NEWCHORE.COM
             </a>
           </h4>
-          A Full Stack chatting application made with React, TypeScript, Bootstrap, React Router, Redux Toolkit, Express, Socket.io, Mongoose, MongoDB and hosted using an ubuntu EC2 instance on AWS
+          A Full Stack chatting application made with React, TypeScript,
+          Bootstrap, React Router, Redux Toolkit, Express, Socket.io, Mongoose,
+          MongoDB and hosted using an ubuntu EC2 instance on AWS
         </div>
       </div>
     </section>
-  ):""
+  ) : (
+    ""
+  );
 }
 
 export default function App() {
