@@ -237,7 +237,7 @@ function Slider({ id }: SliderProps) {
         <div className="lg:w-1/3 bg-gray-900 w-10/12 mx-auto mt-5 p-5 lg:m-0 rounded-xl lg:px-10">
           <h4 className="my-3">
             <a className="no-underline font-bold" href="https://chatyou.io">
-              HTTPS://CHATYOU.IO
+              CHATYOU.IO
             </a>
           </h4>
           A Full Stack chatting application made with React, TypeScript,
@@ -259,12 +259,12 @@ function Slider({ id }: SliderProps) {
         <div className="lg:w-1/3 bg-gray-900 w-10/12 mx-auto mt-5 p-5 lg:m-0 rounded-xl lg:px-10">
           <h4 className="my-3">
             <a className="no-underline font-bold" href="https://newchore.com">
-              HTTPS://NEWCHORE.COM
+              NEWCHORE.COM
             </a>
           </h4>
-          A Full Stack chatting application made with React, TypeScript,
-          Bootstrap, React Router, Redux Toolkit, Express, Socket.io, Mongoose,
-          MongoDB and hosted using an ubuntu EC2 instance on AWS
+          A Full Stack job searching platform made with Next Js, TypeScript,
+          Tailwind CSS, Redux Toolkit, Express, Socket.io, Mongoose, MongoDB and
+          hosted using an ubuntu EC2 instance on AWS
         </div>
       </div>
     </section>
